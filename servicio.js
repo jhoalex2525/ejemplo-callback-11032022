@@ -6,11 +6,11 @@ let parametros = {
 }
 fetch(url,parametros) //fetch es una promesa
 .then(function(respuesta){
-    return (respuesta,json())
+    return (respuesta.json())
 })
 .then(function(respuesta){
     console.log(respuesta)
 })
-.catch(function(error){
-    console.log(error)
+.catch(function(respuesta){
+    console.log(respuesta)
 })
